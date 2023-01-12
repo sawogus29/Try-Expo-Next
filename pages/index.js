@@ -1,19 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Button } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import { StyleSheet, Button } from 'react-native';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Text } from 'react-native';
 
-import CategoriesScreen from './CategoriesScreen';
-import MealsOverviewScreen from './MealsOverviewScreen';
-import MealDetailScreen from './MealDetailScreen';
+// import CategoriesScreen from './CategoriesScreen';
+// import MealsOverviewScreen from './MealsOverviewScreen';
 
-const Stack = createNativeStackNavigator();
+// const Stack = createNativeStackNavigator();
 
-export default function App() {
+function App() {
   return (
     <>
-      <StatusBar style="light" />
-      <NavigationContainer>
+      <Text>hello next!</Text>
+      {/* <NavigationContainer>
         <Stack.Navigator
           screenOptions={{
             headerStyle: { backgroundColor: '#351401' },
@@ -28,23 +27,11 @@ export default function App() {
               title: 'All Categories',
             }}
           />
-          <Stack.Screen
-            name="MealsOverview"
-            component={MealsOverviewScreen}
-            // options={({ route, navigation }) => {
-            //   const catId = route.params.categoryId;
-            //   return {
-            //     title: catId,
-            //   };
-            // }}
-          />
-          <Stack.Screen name="MealDetail" component={MealDetailScreen} />
+          <Stack.Screen name="MealsOverview" component={MealsOverviewScreen} />
         </Stack.Navigator>
-      </NavigationContainer>
+      </NavigationContainer> */}
     </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {},
-});
+export default App;
