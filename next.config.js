@@ -6,12 +6,12 @@ const nextConfig = withExpo({
   swcMinify: true,
   experimental: {
     forceSwcTransforms: true,
-    transpilePackages: [
-      'react-native-web',
-      'expo',
-      // Add more React Native / Expo packages here...
-    ],
   },
+  transpilePackages: [
+    'react-native-web',
+    'expo',
+    // Add more React Native / Expo packages here...
+  ],
 });
 
 module.exports = nextConfig;
